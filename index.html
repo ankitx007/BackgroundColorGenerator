@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/colors-icon-4.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="//cdn.syncfusion.com/ej2/20.3.56/material.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Background Colour Generator</title>
+  </head>
+  <body class="animate__animated animate__fadeInDown">
+    <div class="tabContainer">
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="buttoncontainer" id="buttoncontainer">
+        <button onclick="showPanel(0)" id="background">BACKGROUND</button>
+        <button onclick="showPanel(1)" id="gradient">GRADIENT</button>
+      </div>
+
+      <!-- BACKGROUND -->
+      <div class="tabPanel animate__animated" id="backgroundPanel">
+        <div class="heading">
+          <h1>BACKGROUND</h1>
+        </div>
+        <div class="main">
+          <input
+            type="text"
+            id="Box"
+            value="rgba(255,255,255,1)"
+            class="animate__animated"
+            spellcheck="false"
+          />
+          <p id="para">Click to copy</p>
+          Red
+          <input type="range" id="red" value="255" min="0" max="255" />
+          Green
+          <input type="range" id="green" value="255" min="0" max="255" />
+          Blue
+          <input type="range" id="blue" value="255" min="0" max="255" />
+          Opacity
+          <input type="range" id="opacity" value="10" min="0" max="10" />
+        </div>
+      </div>
+
+      <!-- GRADIENT -->
+      <div class="tabPanel animate__animated" id="GradientPanel">
+        <div class="heading">
+          <h1>GRADIENT</h1>
+        </div>
+        <div class="main">
+          <input
+            type="text"
+            value="linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,1))"
+            class="Box animate__animated"
+            spellcheck="false"
+          />
+          <p id="para">Click to copy</p>
+          Angle
+          <input type="range" id="angle" value="180" min="0" max="360" />
+
+          <div class="gradient">
+            <!-- Color 1 for gradient -->
+            <div class="color1">
+              <h4>Color 1</h4>
+              Red
+              <input
+                type="range"
+                class="red"
+                id="red1"
+                value="255"
+                min="0"
+                max="255"
+              />
+              Green
+              <input
+                type="range"
+                class="green"
+                id="green1"
+                value="255"
+                min="0"
+                max="255"
+              />
+              Blue
+              <input
+                type="range"
+                class="blue"
+                id="blue1"
+                value="255"
+                min="0"
+                max="255"
+              />
+              Opacity
+              <input
+                type="range"
+                class="opacity"
+                id="opacity1"
+                value="10"
+                min="0"
+                max="10"
+              />
+            </div>
+
+            <!-- Color 2 for gradient -->
+            <div class="color2">
+              <h4>Color 2</h4>
+              Red
+              <input
+                type="range"
+                class="red"
+                id="red2"
+                value="255"
+                min="0"
+                max="255"
+              />
+              Green
+              <input
+                type="range"
+                class="green"
+                id="green2"
+                value="255"
+                min="0"
+                max="255"
+              />
+              Blue
+              <input
+                type="range"
+                class="blue"
+                id="blue2"
+                value="255"
+                min="0"
+                max="255"
+              />
+              Opacity
+              <input
+                type="range"
+                class="opacity"
+                id="opacity2"
+                value="10"
+                min="0"
+                max="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Made with<span>❤</span> by
+      <a href="https://github.com/ankitx007">Ankit Sharma</a>.
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+  </body>
+</html>
